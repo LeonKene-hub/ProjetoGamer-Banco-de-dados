@@ -13,5 +13,6 @@ namespace ProjetoGamer_Banco_de_dados.Models
 
         [ForeignKey("Equipe")]
         public int IdEquipe { get; set; }
+        public Equipe? Equipe {get; set;}
     }
 }

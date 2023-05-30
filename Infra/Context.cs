@@ -24,7 +24,7 @@ namespace ProjetoGamer_Banco_de_dados.Infra
                 //TrustServerCertificate: Autenticacao pelo Windows
 
                 //string de conexao
-                optionsBuilder.UseSqlServer("Data Source = initial catalog = projetoGamer; Integrated Security = true; TrustServerCertificate = true");
+                optionsBuilder.UseSqlServer("Data Source = NOTE12-S14; Initial Catalog = GamerManha; User Id = sa; pwd = Senai@134; TrustServerCertificate = true");
             }
         }
 
