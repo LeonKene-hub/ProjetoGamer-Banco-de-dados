@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gRtjA3M/cdTrJu/spGftCRP3lBRG0RewYw69ySYDatY=",
+  "Hash": "yRuhZyMlRogBdX+ynl+nJdM1H54SDcTX60xGOvPih34=",
   "Source": "ProjetoGamer-Banco-de-dados",
   "BasePath": "_content/ProjetoGamer-Banco-de-dados",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\img\\Equipes\\e0a744f7c7f31f474dbb5431f9ad9b78.png",
+      "SourceId": "ProjetoGamer-Banco-de-dados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer-Banco-de-dados",
+      "RelativePath": "img/Equipes/e0a744f7c7f31f474dbb5431f9ad9b78.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\e0a744f7c7f31f474dbb5431f9ad9b78.png"
     },
     {
       "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\js\\site.js",

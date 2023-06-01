@@ -75,6 +75,27 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
             return LocalRedirect("~/Equipe/Listar");
         }
 
+        [Route("Excluir{id}")] //https://localhost/Equipe/Excluir
+        public IActionResult Excluir(int id)
+        {
+            Equipe equipeBuscada = c.Equipe.First(e => e.IdEquipe == id)!;
+            c.Remove(equipeBuscada);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
+        }
+
+        [Route("Editar{id}")] //https://localhost/Equipe/Editar
+        public IActionResult Editar(int id)
+        {
+            Equipe equipeBuscada = c.Equipe.First(e => e.IdEquipe == id)!;
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
