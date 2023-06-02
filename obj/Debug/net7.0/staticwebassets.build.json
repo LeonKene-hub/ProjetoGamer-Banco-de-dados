@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yRuhZyMlRogBdX+ynl+nJdM1H54SDcTX60xGOvPih34=",
+  "Hash": "1r/xhcjoBTdZm/RWaiUwme4m0Tms3TnM/QjacGj/e9U=",
   "Source": "ProjetoGamer-Banco-de-dados",
   "BasePath": "_content/ProjetoGamer-Banco-de-dados",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\e0a744f7c7f31f474dbb5431f9ad9b78.png"
+    },
+    {
+      "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\img\\Equipes\\wallpaperflare.com_wallpaper.jpg",
+      "SourceId": "ProjetoGamer-Banco-de-dados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer-Banco-de-dados",
+      "RelativePath": "img/Equipes/wallpaperflare.com_wallpaper.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\wallpaperflare.com_wallpaper.jpg"
     },
     {
       "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\js\\site.js",

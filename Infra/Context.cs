@@ -28,7 +28,7 @@ namespace ProjetoGamer_Banco_de_dados.Infra
             }
         }
 
-        public DbSet<Jogador> jogador {get; set;}
+        public DbSet<Jogador> Jogador {get; set;}
         public DbSet<Equipe> Equipe {get; set;}
     }
 }
