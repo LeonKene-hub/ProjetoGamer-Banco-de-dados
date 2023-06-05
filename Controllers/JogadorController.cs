@@ -26,7 +26,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
             return View("Error!");
         }
 
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
         Context c = new Context();
 
         [Route("Listar")] //http:localhost/Jogador/Listar
@@ -46,6 +46,13 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
             novoJogador.Nome = form["Nome"].ToString();
             novoJogador.Email = form["Email"].ToString();
             novoJogador.Senha = form["Senha"].ToString();
+
+            string nomeEquipe = form["Equipe"].ToString();
+
+            novoJogador.Equipe = c.Equipe.First(x => x.Nome == nomeEquipe);
+
+            c.Jogador.Add(novoJogador);
+            c.SaveChanges();
 
             return LocalRedirect("~/Jogador/Listar");
         }
