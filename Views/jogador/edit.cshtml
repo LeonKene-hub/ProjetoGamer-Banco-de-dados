@@ -1,0 +1,31 @@
+@Model Jogador
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edicao de Jogador</h1>
+
+<form method="post" action='@Url.Action("Atualizar")'>
+    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+
+
+    <label for="">Nome</label>
+    <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
+
+    <label for="">Email</label>
+    <input type="text" name="Email" value="@ViewBag.Jogador.Email">
+
+    <label for="">Senha</label>
+    <input type="text" name="Senha" value="@ViewBag.Jogador.Senha">
+
+    <label for="">Equipe</label>
+    <select name="Equipe" id="">
+        @foreach (Equipe equipe in ViewBag.Equipe)
+        {
+            <option>@equipe.Nome</option>
+        }
+    </select>
+
+    <button type="submit">Atualizar</button>
+</form>
