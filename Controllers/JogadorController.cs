@@ -32,6 +32,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Listar")] //http:localhost/Jogador/Listar
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             ViewBag.Jogador = c.Jogador.ToList();
             ViewBag.Equipe = c.Equipe.ToList();
 
@@ -72,6 +73,8 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Editar{id}")] //http://localhost/Jogador/Editar
         public IActionResult Editar(int id)
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            
             Jogador jogadorBuscado = c.Jogador.First(e => e.IdJogador == id);
             ViewBag.Jogador = jogadorBuscado;
             ViewBag.Equipe = c.Equipe.ToList();
@@ -83,7 +86,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         public IActionResult Atualizar(IFormCollection form)
         {
             Jogador jogador = new Jogador();
-            jogador.IdJogador = int.Parse(form["IdJogador"]);
+            jogador.IdJogador = int.Parse(form["IdJogador"]!);
 
             jogador.Nome = form["Nome"];
             jogador.Email = form["Email"];

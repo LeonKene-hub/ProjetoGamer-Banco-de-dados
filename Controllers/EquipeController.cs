@@ -26,6 +26,8 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+
             //variavel que armazena as equipes listadas do banco de dados
             ViewBag.Equipe = c.Equipe.ToList();
 
@@ -89,6 +91,8 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Editar{id}")] //http://localhost/Equipe/Editar
         public IActionResult Editar(int id)
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            
             Equipe equipeBuscada = c.Equipe.First(e => e.IdEquipe == id)!;
 
             ViewBag.Equipe = equipeBuscada;
