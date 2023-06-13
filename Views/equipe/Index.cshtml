@@ -4,7 +4,15 @@
     ViewData["Title"] = "Equipe";
 }
 
-<h1>Tela de Equipes</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/reset-and-basics.css">
+    <link rel="stylesheet" href="~/css/equipes.css">
+</head>
 
 @if (ViewBag.UserName == null)
 {
@@ -14,8 +22,100 @@
 }
 else
 {
+    
+        <section class="container-grid cadastro-equipes">
 
-    <form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+            <form action="" class="frm-cad-equipe" method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+                <div class="cadequipe-titulo">
+                    <h1>Cadastro de Equipes</h1>
+                    <hr>
+                </div>
+
+               
+                <input class="campo-entrada" type="text" placeholder="Digite o nome da sua equipe:" name="Nome" required>
+                <label class="foto" for="foto-file">
+                    Nenhuma imagem selecionada...
+                    <input type="file" id="foto-file" name="Imagem">
+                </label>
+
+                <button type="submit" value="Upload">Cadastro</button>
+
+            </form>
+
+            <!-- TABELA CADASTRO DE EQUIPES -->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Foto</th>
+                        <th>&spades;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Equipe equipe in ViewBag.Equipe)
+                    {
+                        <tr>
+                            <td>@equipe.IdEquipe</td>
+                            <td>@equipe.Nome</td>
+                            <td>
+                                <img src="/img/Equipes/@equipe.Imagem" width="50px" height="50px"
+                                    alt="Imagem da equipe @equipe.Nome">
+                            </td>
+                            <td>
+                                <a asp-area="" asp-controller="Equipe" asp-action="Excluir"
+                                    asp-route-id="@equipe.IdEquipe">Excluir</a>
+                            </td>
+                            <td>
+                                <a asp-area="" asp-controller="Equipe" asp-action="Editar"
+                                    asp-route-id="@equipe.IdEquipe">Editar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @* <form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
         <div>
             <label for="">Nome</label>
             <input type="text" name="Nome" required>
@@ -58,5 +158,5 @@ else
 
         </tbody>
 
-    </table>
+    </table> *@
 }
