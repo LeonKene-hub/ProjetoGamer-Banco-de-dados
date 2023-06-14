@@ -22,7 +22,7 @@
 
                     <span class="mail-box">
                         <img src="~/assets/envelope-icon.png" alt="envelope icon" title="Ícone Envelope">
-                        contato@gamer.com.br
+                        @ViewBag.Login
                     </span>
                 </div>
 
@@ -52,7 +52,7 @@
                         <a href="~/">Início</a>
                         <a href="#">Notícias</a>
 
-                        @if (ViewBag.UserName != null)
+                        @if (ViewBag.Login != null)
                         {
                             <a asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
                             <a asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
@@ -64,7 +64,7 @@
                         </a>
                         <a class="mail-box">
                             <img src="~/assets/envelope-icon.png" alt="envelope icon" title="Ícone Envelope">
-                            contato@gamer.com.br
+                            @ViewBag.Login
                         </a>
 
                         <!-- social icons -->

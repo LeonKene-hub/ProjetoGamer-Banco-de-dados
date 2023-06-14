@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ProjetoGamer_Banco_de_dados.Infra;
 using ProjetoGamer_Banco_de_dados.Models;
 
@@ -26,7 +20,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
 
             //variavel que armazena as equipes listadas do banco de dados
             ViewBag.Equipe = c.Equipe.ToList();
@@ -84,7 +78,8 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
             c.Remove(equipeBuscada);
 
             c.SaveChanges();
-
+            
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return LocalRedirect("~/Equipe/Listar");
         }
 

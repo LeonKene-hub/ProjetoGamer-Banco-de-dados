@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ProjetoGamer_Banco_de_dados.Infra;
 using ProjetoGamer_Banco_de_dados.Models;
 
@@ -32,7 +26,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Listar")] //http:localhost/Jogador/Listar
         public IActionResult Index()
         {
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
             ViewBag.Jogador = c.Jogador.ToList();
             ViewBag.Equipe = c.Equipe.ToList();
 
@@ -42,6 +36,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Cadastrar")] //http:localhost/Jogador/Cadastrar
         public IActionResult Cadastrar(IFormCollection form)
         {
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
             Jogador novoJogador = new Jogador();
 
             novoJogador.Nome = form["Nome"].ToString();
@@ -73,7 +68,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Editar{id}")] //http://localhost/Jogador/Editar
         public IActionResult Editar(int id)
         {
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
             
             Jogador jogadorBuscado = c.Jogador.First(e => e.IdJogador == id);
             ViewBag.Jogador = jogadorBuscado;
@@ -85,6 +80,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
         [Route("Atualizar")] //http://localhost/Jogador/Atualizar
         public IActionResult Atualizar(IFormCollection form)
         {
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
             Jogador jogador = new Jogador();
             jogador.IdJogador = int.Parse(form["IdJogador"]!);
 

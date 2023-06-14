@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ProjetoGamer_Banco_de_dados.Infra;
 using ProjetoGamer_Banco_de_dados.Models;
 
@@ -22,13 +16,12 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
 
         [TempData]
         public string Message {get; set;}
-
         Context c = new Context();
 
         [Route("Login")]
         public IActionResult Index()
         {
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
             return View();
         }
 
@@ -43,7 +36,7 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
             //Aqui precisamos implementar a sessão
             if (jogadorBuscado != null)
             {
-                HttpContext.Session.SetString("UserName",jogadorBuscado.Nome);
+                HttpContext.Session.SetString("UserName",jogadorBuscado.Nome!);
                 return LocalRedirect("~/");
             }
             Message = "Dados invalidos";

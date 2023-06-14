@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vsxwf9baUhhYXIXt1g+u1Liv5nIhnGwBnXdxAoMG9ZI=",
+  "Hash": "MW0X+8V0CNXkPYD+cQymJRmXna197F+SczsQQ9/qxD8=",
   "Source": "ProjetoGamer-Banco-de-dados",
   "BasePath": "_content/ProjetoGamer-Banco-de-dados",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "wwwroot\\css\\equipes.css"
     },
     {
+      "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\css\\jogadores.css",
+      "SourceId": "ProjetoGamer-Banco-de-dados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer-Banco-de-dados",
+      "RelativePath": "css/jogadores.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jogadores.css"
+    },
+    {
       "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\css\\login.css",
       "SourceId": "ProjetoGamer-Banco-de-dados",
       "SourceType": "Discovered",
@@ -1545,6 +1562,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\e0a744f7c7f31f474dbb5431f9ad9b78.png"
+    },
+    {
+      "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\img\\Equipes\\LOGO_ACESSIBILIDADE_-_AGOSTO_2015.jpg",
+      "SourceId": "ProjetoGamer-Banco-de-dados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer-Banco-de-dados",
+      "RelativePath": "img/Equipes/LOGO_ACESSIBILIDADE_-_AGOSTO_2015.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\LOGO_ACESSIBILIDADE_-_AGOSTO_2015.jpg"
     },
     {
       "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\img\\Equipes\\receita-de-cupcake.jpg",
