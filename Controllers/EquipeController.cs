@@ -79,14 +79,14 @@ namespace ProjetoGamer_Banco_de_dados.Controllers
 
             c.SaveChanges();
             
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
             return LocalRedirect("~/Equipe/Listar");
         }
 
         [Route("Editar{id}")] //http://localhost/Equipe/Editar
         public IActionResult Editar(int id)
         {
-            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
             
             Equipe equipeBuscada = c.Equipe.First(e => e.IdEquipe == id)!;
 
