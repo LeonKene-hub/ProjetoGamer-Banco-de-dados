@@ -1,31 +1,63 @@
-@Model Jogador
+@model Jogador
 
 @{
     ViewData["Title"] = "Edit";
 }
+<link rel="stylesheet" href="~/css/reset-and-basics.css">
+<link rel="stylesheet" href="~/css/jogadores.css">
+<main>
+    <section class="container-grid cadastro-equipes">
 
-<h1>Edicao de Jogador</h1>
+        <form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data" class="frm-cad-equipe">
+            <div class="cadequipe-titulo">
+                <h1>Editando Jogador</h1>
+                <hr>
+            </div>
+            <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
-<form method="post" action='@Url.Action("Atualizar")'>
-    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+            <input class="campo-entrada" type="text" id="nome-jogador" name="Nome" value="@ViewBag.Jogador.Nome"
+                placeholder="Digite o nome do Jogador:" required>
+
+            <input class="campo-entrada" type="email" id="email-jogador" name="Email" value="@ViewBag.Jogador.Email"
+                placeholder="Digite o Email do Jogador:" required>
+
+            <input class="campo-entrada" type="password" id="senha" name="Senha" value="@ViewBag.Jogador.Senha"
+                placeholder="Digite a Senha:" required>
+
+            <select class="campo-entrada" id="equipe-select" name="Equipe">
+                <option value="">Selecione uma Equipe</option>
+                @foreach (Equipe equipe in ViewBag.Equipe)
+                {
+                    <option>@equipe.Nome</option>
+                }
+            </select>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </section>
+</main>
+
+@* <form method="post" action='@Url.Action("Atualizar")'>
+<input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
 
-    <label for="">Nome</label>
-    <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
+<label for="">Nome</label>
+<input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
 
-    <label for="">Email</label>
-    <input type="text" name="Email" value="@ViewBag.Jogador.Email">
+<label for="">Email</label>
+<input type="text" name="Email" value="@ViewBag.Jogador.Email">
 
-    <label for="">Senha</label>
-    <input type="text" name="Senha" value="@ViewBag.Jogador.Senha">
+<label for="">Senha</label>
+<input type="text" name="Senha" value="@ViewBag.Jogador.Senha">
 
-    <label for="">Equipe</label>
-    <select name="Equipe" id="">
-        @foreach (Equipe equipe in ViewBag.Equipe)
-        {
-            <option>@equipe.Nome</option>
-        }
-    </select>
+<label for="">Equipe</label>
+<select name="Equipe" id="">
+@foreach (Equipe equipe in ViewBag.Equipe)
+{
+<option>@equipe.Nome</option>
+}
+</select>
 
-    <button type="submit">Atualizar</button>
-</form>
+<button type="submit">Atualizar</button>
+</form> *@

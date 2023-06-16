@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MW0X+8V0CNXkPYD+cQymJRmXna197F+SczsQQ9/qxD8=",
+  "Hash": "1bA/4jrjKa+twIy/2gijxR77DutuizToRlXsMExCNxI=",
   "Source": "ProjetoGamer-Banco-de-dados",
   "BasePath": "_content/ProjetoGamer-Banco-de-dados",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\Botao_voltar_ao_topo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\edit.svg",
+      "SourceId": "ProjetoGamer-Banco-de-dados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer-Banco-de-dados",
+      "RelativePath": "assets/edit.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\edit.svg"
     },
     {
       "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\envelope-icon.png",
@@ -882,6 +899,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\logotipo-gamer.svg"
+    },
+    {
+      "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\logout.svg",
+      "SourceId": "ProjetoGamer-Banco-de-dados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\",
+      "BasePath": "_content/ProjetoGamer-Banco-de-dados",
+      "RelativePath": "assets/logout.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\logout.svg"
     },
     {
       "Identity": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\market-icon.png",

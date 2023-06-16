@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\assets\\Botao_voltar_ao_topo.svg"
     },
     {
+      "Id": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\edit.svg",
+      "PackagePath": "staticwebassets\\assets\\edit.svg"
+    },
+    {
       "Id": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\envelope-icon.png",
       "PackagePath": "staticwebassets\\assets\\envelope-icon.png"
     },
@@ -199,6 +203,10 @@
     {
       "Id": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\logotipo-gamer.svg",
       "PackagePath": "staticwebassets\\assets\\logotipo-gamer.svg"
+    },
+    {
+      "Id": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\logout.svg",
+      "PackagePath": "staticwebassets\\assets\\logout.svg"
     },
     {
       "Id": "C:\\Users\\56026708820\\Desktop\\ProjetoGamer-Banco-de-dados\\wwwroot\\assets\\market-icon.png",
